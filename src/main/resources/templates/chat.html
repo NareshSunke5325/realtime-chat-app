@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chat App - WhatsApp Style</title>
+
+    <!-- Fonts & Tailwind -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/chat.css}" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+
+    <!-- WebSocket Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js" defer></script>
+
+    <!-- Custom JS -->
+    <script th:src="@{/js/chat.js}" defer></script>
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-header" id="receiverHeader">Chat</div>
+
+    <div class="id-inputs">
+        <input type="text" id="senderId" placeholder="Sender ID" autocomplete="off">
+        <input type="text" id="receiverId" placeholder="Receiver ID" autocomplete="off">
+    </div>
+
+    <div class="chat-messages" id="chatArea">
+        <ul id="messages"></ul>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="message" placeholder="Type a message..." autocomplete="off">
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+</body>
+</html>
