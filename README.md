@@ -19,7 +19,7 @@
 |---------------|---------------------------|
 | Backend       | `Spring Boot`             |
 | Communication | `WebSocket` + `STOMP`     |
-| Frontend      | `Thymeleaf`, `HTML5`, `CSS3`, `JavaScript` |
+| Frontend      | `Thymeleaf`, `HTML5`, `CSS3`,`Tailwind CSS`, `JavaScript` |
 
 ---
 
