@@ -6,10 +6,10 @@
 
 ## 🚀 Features
 
-✅ Real-time messaging using **WebSocket (STOMP)**  
-✅ **Spring Boot** backend with dynamic **Thymeleaf UI**  
-✅ Server-side rendered templates + instant message updates  
-✅ Built with simplicity, ideal for learning or small teams
+- Real-time messaging using **WebSocket (STOMP)**  
+- **Spring Boot** backend with dynamic **Thymeleaf UI**  
+- Server-side rendered templates + instant message updates  
+- Built with simplicity, ideal for learning or small teams
 
 ---
 
